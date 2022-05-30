@@ -21,7 +21,7 @@ class Operation
   end
 
   def message
-    (@operand_one || "PICK A NUMBER") || (@operand_two || "PICK ANOTHER")
+    @operand_one ? "#{@operand_one} #{@operation}" : "..."
   end
 
   private

@@ -1,3 +1,4 @@
+<h1 class="font-bold text-xl mb-4 text-gray-600 text-center">Hotwire Calculator</h1>
 <%= turbo_frame_tag "form" do %>
   <%= form_for @operation, html: { class: "grid grid-cols-4 gap-4 bg-cyan-50 border p-8" } do |f| %>
     <%= hidden_field_tag "operation[]", @operation.operand_one %>
@@ -17,6 +18,6 @@
     <input type="submit" name="operation[]" value="9" class="button" />
     <input type="submit" name="operation[]" value="*" class="button" />
     <input type="submit" name="operation[]" value="0" class="button col-span-3" />
-    <input type="submit" name="operation[]" value="=" class="button" />
+    <input type="submit" name="operation[]" value=" " class="button" />
   <% end %>
 <% end %>
