@@ -17,7 +17,7 @@ class Operation
   end
 
   def calculate!
-    send(operation.to_s)
+    __send__(operation.to_s)
   end
 
   def message
